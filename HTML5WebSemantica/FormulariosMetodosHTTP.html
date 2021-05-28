@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários e Métodos HTTP</title>
+
+    <!-- GET, POST, DELETE, POST -->
+    <!-- Form que envia uma requisição GET (read) -->
+    <form action="" method="GET">
+        <caption>Digite o código do produto - GET (read)</caption><br>
+        <label for="GET-name">Código:</label>
+        <input id="GET-name" type="text" name="codigo">
+        <input type="submit" value="Buscar">
+    </form><br>
+
+    <!-- Form que envia uma requisição POST (create) -- No campo http/url não mostra o que foi enviado -->
+    <form action="" method="POST">
+        <caption>Cadastre o código do produto - POST (create)</caption><br>
+        <label for="GET-name">Código:</label>
+        <input id="GET-name" type="text" name="codigo">
+        <label for="GET-name">Descrição:</label>
+        <input id="GET-name" type="text" name="descricao">
+        <label for="GET-name">Preço:</label>
+        <input id="GET-name" type="text" name="preco">
+        <input type="submit" value="Cadastrar">
+    </form><br>
+
+    <!-- Form que envia uma requisição PUT (update) -->
+    <form action="" method="PUT">
+        <caption>Cadastre o código do produto - PUT (update)</caption><br>
+        <label for="GET-name">Código:</label>
+        <input id="GET-name" type="text" name="codigo">
+        <label for="GET-name">Descrição:</label>
+        <input id="GET-name" type="text" name="descricao">
+        <label for="GET-name">Preço:</label>
+        <input id="GET-name" type="text" name="preco">
+        <input type="submit" value="Cadastrar">
+    </form><br>
+
+        <!-- Form que envia uma requisição DELETE (delete) -->
+        <form action="" method="DELETE">
+            <caption>Excluir o código do produto - DELETE (delete)</caption><br>
+            <label for="GET-name">Código:</label>
+            <input id="GET-name" type="text" name="codigo">
+            <input type="submit" value="Excluir">
+        </form><br>
+
+</head> 
+</body>
+</html>
