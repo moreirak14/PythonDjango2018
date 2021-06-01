@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage</title>
+
+    <script type="text/javascript">
+        function salvar(){
+            if (typeof(Storage) !== "undefined") {
+                    // Code for localStorage/sessionStorage.
+                    localStorage.setItem("nome", "EQM");
+                    localStorage.setItem("modelos", "Camisetas e Bermudas");
+                    sessionStorage.setItem("modelos2", "Blusas e Moletons");
+                } else {
+                    // Sorry! No Web Storage support..
+                    alert('Sorry! No Web Storage support..')
+                }
+        }
+        function ler(){
+            if (typeof(Storage) !== "undefined") {
+                    // Code for localStorage/sessionStorage.
+                    document.getElementById("resultado").innerHTML = localStorage.getItem("modelos");
+                } else {
+                    // Sorry! No Web Storage support..
+                    alert('Sorry! No Web Storage support..')
+                }
+        }
+        function remover(){
+            if (typeof(Storage) !== "undefined") {
+                    // Code for localStorage/sessionStorage.
+                    localStorage.removeItem("nome");
+                } else {
+                    // Sorry! No Web Storage support..
+                    alert('Sorry! No Web Storage support..')
+                }
+        }  
+            
+    </script>
+
+</head>
+<body>
+
+    <div id="resultado"></div>
+    <br>
+
+    <button onclick="salvar()">Salvar</button>
+    <br>
+    <button onclick="ler()">Ler</button>
+    <br>
+    <button onclick="remover()">Remover</button>
+
+</body>
+</html>
