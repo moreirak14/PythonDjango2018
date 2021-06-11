@@ -1,0 +1,44 @@
+header {
+  float: left;
+  background-color: black;
+  width: 100%;
+}
+
+header p {
+  float: right;
+}
+
+a {
+  color: gold;
+  background: black;
+  padding: 10px 3px;
+}
+
+#logo {
+  float: left;
+  width: 20%;
+  height: 20%;
+  display: block;
+}
+
+nav {
+  float: right;
+  padding: 20px;
+}
+
+#menu-icon {
+  display: hidden;
+  width: 10px;
+  height: 10px;
+  background: gold url(../img/retangulos-de-menu.png) center;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
