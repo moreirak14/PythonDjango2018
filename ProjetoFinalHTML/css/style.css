@@ -31,7 +31,7 @@ nav {
   display: hidden;
   width: 10px;
   height: 10px;
-  background: gold url(../img/retangulos-de-menu.png) center;
+  background: white url(../img/retangulos-de-menu.png) center;
 }
 
 ul {
@@ -73,5 +73,19 @@ li {
 
   nav li a {
     color: #3b8686;
+  }
+
+  nav:hover ul {
+    display: block;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .depoimentos{
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 5px;
+    width: 95%;
   }
 }
