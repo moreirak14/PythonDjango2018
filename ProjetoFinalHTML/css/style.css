@@ -6,6 +6,7 @@ header {
 
 header p {
   float: right;
+  color: white;
 }
 
 a {
@@ -39,6 +40,38 @@ ul {
 
 li {
   display: inline-block;
-  float: left;
+  float: none;
   padding: 10px;
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 640px) {
+  #menu-icon {
+    display: inline-block;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    padding: 20px;
+    background: #fff;
+    width: 20%;
+  }
+
+  nav li {
+    text-align: left;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  nav:hover ul {
+    display: block;
+  }
+
+  nav li a {
+    color: #3b8686;
+  }
 }
